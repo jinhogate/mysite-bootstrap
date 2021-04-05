@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jdeveloppement</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e39adeeb78.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #943c04;
+            text-decoration: underline;
+            letter-spacing: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('.tooltip-p1').tooltip({ title: "<p> Le taxi est un véhicule automobile terrestre privé, conduit par un chauffeur et destiné au transport payant de passagers et de leurs bagages, de porte à porte, contrairement aux transports en commun qui transportent les passagers entre des points prédéterminés (stations de métro, stations de tramway, arrêts de bus, gares). Cependant, dans certains pays,  il existe une différence entre les taxis particuliers et les taxis communs. </p>", html: true, placement: "top", trigger: "click" });
+        });
+        $(document).ready(function () {
+            $('.tooltip-p2').tooltip({ title: "<p> Le virus qui entraîne la COVID-19 se transmet ‎principalement par des gouttelettes produites ‎lorsqu’une personne infectée tousse, éternue, ou ‎lors d’une expiration. Ces gouttelettes sont trop ‎lourdes pour rester dans l’air et tombent ‎rapidement sur le sol ou sur toute surface proche.‎ Vous pouvez être infecté en respirant le virus, si ‎vous  êtes à proximité d’une personne malade, ou en ‎touchant une surface contaminée puis vos yeux, ‎votre nez ou votre bouche.‎ </p>", html: true, placement: "top", trigger: "click" });
+        });
+    </script>
+</head>
+
+<body>
+
+    <main style="background-color: blanchedalmond;">
+        <h1 class="text-center text-uppercase">Nos produits payants</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="images/taxiapp.jpg" alt="taxiapp" style="width:100%; height: 250px;">
+                        <div class="caption">
+                            <div class="produit-content">
+                                <h4>GET-TAXI</h4>
+                                <a class="btn btn-primary demo" type="button" href="#">Demo</a>
+                                <a class="btn btn-danger down" type="button" href="#">Telecharger <span
+                                        class="badge">50$</span> </a>
+                                <a class="btn btn-warning no-free" type="button" href="#">Payant</a> <br>
+                                <p style="padding: 5px;">
+                                    Le taxi est un véhicule automobile terrestre privé, conduit par un chauffeur et
+                                    destiné au...
+                                </p>
+                                <a type="button" class="btn btn-default tooltip-p1" href="#" data-toggle="tooltip">Lire
+                                    plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="images/ecovid.jpg" alt="e-covid" style="width:100%; height: 250px;">
+                        <div class="caption">
+                            <div class="produit-content">
+                                <h4>E-covid</h4>
+                                <a class="btn btn-primary demo" type="button" href="#">Demo</a>
+                                <a class="btn btn-danger down" type="button" href="#">Telecharger <span
+                                        class="badge">60$</span> </a>
+                                <a class="btn btn-warning no-free" type="button" href="#">Payant</a> <br>
+                                <p style="padding: 5px;">
+                                    Le virus qui entraîne la COVID-19 se transmet ‎principalement par des gouttelettes
+                                    produites...
+                                </p>
+
+                                <a type="button" class="btn btn-default tooltip-p2" href="#" data-toggle="tooltip">Lire
+                                    plus</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-center text-uppercase bg-info">Tuto installation de nos produits</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe style="padding: 5px;" class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

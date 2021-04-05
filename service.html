@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jdeveloppement</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e39adeeb78.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #943c04;
+            text-decoration: underline;
+            letter-spacing: 10px;
+        }
+
+        .item {
+            height: 250px;
+        }
+
+        .carousel-caption {
+            background-color: white;
+            color: black;
+            font-size: xx-large;
+            position: absolute;
+            top: 80px;
+            height: 100px;
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 5px 5px 15px #943c04;
+            border: 3px solid #fb7c24;
+        }
+
+        ol {
+            background-color: black;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/service.css">-->
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 class="text-center text-uppercase">Services</h1>
+            <div class="well" style="background-color: rgba(252,124,36,0.7); margin:auto;">
+                <h2>Nos services <span class="label label-info">Développement informatique</span></h2> <br>
+                <div class="panel-group">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                <a data-toggle="collapse" href="#service"><i
+                                        class="fa fa-american-sign-language-interpreting fa-spin"></i> Retrouver
+                                    l'ensemble de nos services ici</a>
+                                </h4>
+                        </div>
+                        <div id="service" class="panel-collapse collapse">
+                            <div class="list-group">
+                                <a data-toggle="modal" href="#web" class="list-group-item">Développement d'application
+                                    web</a>
+                                <a data-toggle="modal" href="#mobile" class="list-group-item">Réalisation d'application
+                                    mobile</a>
+                                <a data-toggle="modal" href="#site-web" class="list-group-item">Conception de site
+                                    web</a>
+                                <a data-toggle="modal" href="#audit" class="list-group-item">Audit informatique</a>
+                            </div>
+                            <div class="panel-footer">
+                                <h2><i class="fa fa-info"></i> Quelques chiffres sur nos services </h2>
+                                <table class="table table-hover table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Services</th>
+                                            <th>Chiffres d'affaires 2021 (<i class="fas fa-euro-sign"></i>)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="warning">
+                                            <td>Développement d'application web</td>
+                                            <td>50M</td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td>Réalisation <abbr title="application">app</abbr> mobile</td>
+                                            <td>20M</td>
+                                        </tr>
+                                        <tr class="danger">
+                                            <td>Conception de site web</td>
+                                            <td>25M</td>
+                                        </tr>
+                                        <tr class="info">
+                                            <td>Audit informatique</td>
+                                            <td>31M</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-header"></div>
+            <div class="row">
+                <div class="col-md-7 col-sm-7 col-md-offset-3 col-sm-offset-2">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <a data-toggle="modal" href="#web">
+                                    <img src="images/webapp.jpg" alt="App Web">
+                                    <div class="carousel-caption">
+                                        <h3>Développement d'application web</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a data-toggle="modal" href="#mobile">
+                                    <img src="images/androidapp.jpg" alt="App mobile">
+                                    <div class="carousel-caption">
+                                        <h3>Réalisation d'application mobile</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a data-toggle="modal" href="#site-web">
+                                    <img src="images/websiteapp.jpg" alt="Site web">
+                                    <div class="carousel-caption">
+                                        <h3>Conception de site web</h3>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a data-toggle="modal" href="#audit">
+                                    <img src="images/auditconsult.jpg" alt="Audit informatique">
+                                    <div class="carousel-caption">
+                                        <h3>Audit informatique</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--modal web -->
+            <div id="web" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Développement d'application web</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="media">
+                                <div class="media-left media-middle">
+                                    <img src="images/webapp.jpg" class="media-object" style="width:200px">
+                                </div>
+                                <div class="media-body">
+                                    <h2 class="media-header">Développement d'application Web</h2>
+                                    <p>
+                                        Le développement Web désigne de manière générale les tâches associées au
+                                        développement de sites Web destinés à être hébergés via un intranet ou Internet.
+                                        Le processus de développement web comprend, entre autres, la conception de sites
+                                        web, le développement
+                                        de contenu web, l’élaboration de scripts côté client ou côté serveur et la
+                                        configuration de la sécurité du réseau.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer <span
+                                    class="glyphicon glyphicon-remove-circle"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin modal web-->
+            <!--modal mobile -->
+            <div id="mobile" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Réalisation d'application mobile</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="media">
+                                <div class="media-left media-middle">
+                                    <img src="images/androidapp.jpg" class="media-object" style="width:200px">
+                                </div>
+                                <div class="media-body">
+                                    <h2 class="media-header">Réalisation d'application mobile</h2>
+                                    <p>
+                                        Android est un système d'exploitation mobile, c'est-à-dire que, tout comme
+                                        Windows ou Linux c'est un gros programme, composé de petits programmes, qui
+                                        permet d'exécuter d'autres logiciels. Par exemple, Windows permet d'exécuter
+                                        Internet Explorer, et pour
+                                        ce faire, il doit faire le lien entre la souris et le curseur à l'écran, entre
+                                        le clavier et les champs de saisie, etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer <span
+                                    class="glyphicon glyphicon-remove-circle"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin modal mobile-->
+            <!--modal site-web -->
+            <div id="site-web" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Conception de site web</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="media">
+                                <div class="media-left media-middle">
+                                    <img src="images/websiteapp.jpg" class="media-object" style="width:200px">
+                                </div>
+                                <div class="media-body">
+                                    <h2 class="media-header">Conception de site web</h2>
+                                    <p>
+                                        Nous concevons pour vous le site web qui représentera votre activité. En étant
+                                        présent sur internet, vous multipliez vos opportunités de visibilité et votre
+                                        efficacité. Vos clients et de nouveaux prospects doivent pouvoir vous trouver et
+                                        avoir accès à
+                                        l’information qu’ils recherchent. Ainsi, votre site soutient non seulement votre
+                                        activité, mais il la stimule également. seulement votre activité, mais il la
+                                        stimule également.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer <span
+                                    class="glyphicon glyphicon-remove-circle"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin modal site-web-->
+            <!--modal audit -->
+            <div id="audit" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Audit informatique</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="media">
+                                <div class="media-left media-middle">
+                                    <img src="images/auditconsult.jpg" class="media-object" style="width:200px">
+                                </div>
+                                <div class="media-body">
+                                    <h2 class="media-header">Audit informatique</h2>
+                                    <p>
+                                        Un ransomware logiciel d'extorsion, un logiciel malveillant qui prend en otage
+                                        vos données personnelles. Pour ce faire, il chiffre à votre insue les données
+                                        personnelles hébergées dans votre système puis vous demande d'envoyer de
+                                        l'argent en échange de
+                                        la clé qui permettra de récupérer l'accès à vos données. Un ransomware peut
+                                        aussi bloquer l'accès de tout utilisateur à une machine jusqu'à ce qu'une clé ou
+                                        un outil ...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer <span
+                                    class="glyphicon glyphicon-remove-circle"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin modal audit-->
+        </div>
+
+    </main>
+</body>
+
+</html>
